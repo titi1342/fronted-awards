@@ -1,0 +1,29 @@
+
+.content {
+    display: inline;
+    margin-left: 30px;
+    margin-top: 150px;
+}
+
+.content .title {
+    color: #fff;
+    margin-left: 230px;
+}
+
+.content .title .typo {
+    margin-top: -20px;
+}
+
+.content .texte {
+    color:rgba(240, 239, 239, 0.78);
+    margin: 40px 0 0 280px;
+}
+
+.content .video ::before{
+    scale: 30%;
+    margin: -90px 0 0 -400px;
+}
+
+.content .video :active {
+    scale:100%;
+}

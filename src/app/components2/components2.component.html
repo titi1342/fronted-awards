@@ -1,0 +1,22 @@
+<div class="content">
+    <div class="title" >
+        <h3 class="movie" >MOVIE-INSPIRED</h3>
+        <h2 class="typo">TYPOGRAPHY</h2>
+        <a href="#div1" SimpleSmoothScrollDirective [showHash]="true" [offset]="-50" >click</a>
+    </div>
+    <div class="texte">
+        <p>Masterly animated captions allure your viewer 
+            <br> with modern motion  design ande introduce a 
+            <br> true filmic atmosphere in your edits. 
+        </p>
+    </div>
+    <div class="video" id="div1">
+        <img src="assets/video/video_thumbnail.jpg" (click)="showLightbox(0)"  />
+ 
+        <ng-image-fullscreen-view
+        [images]="imageObject"
+        [imageIndex]="selectedImageIndex"
+        [show]="showFlag"
+        (close)="closeEventHandler()"></ng-image-fullscreen-view>
+    </div>
+</div>
